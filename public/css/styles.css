@@ -1,0 +1,254 @@
+@import url("http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
+/* line 5, ../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* line 5, ../../sass/_base.scss */
+h1 {
+  font-size: 2.2rem;
+  color: #ef7e60; }
+
+/* line 10, ../../sass/_base.scss */
+.test {
+  font-size: 1.2rem;
+  color: #2176C7; }
+
+/* line 9, ../../sass/styles.scss */
+#topPad {
+  padding-top: -25px; }
+
+/* line 15, ../../sass/styles.scss */
+#About {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #27ae60;
+  width: 100%; }
+
+/* line 22, ../../sass/styles.scss */
+#Comics {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #2ecc71;
+  width: 100%; }
+
+/* line 28, ../../sass/styles.scss */
+#Ceramics {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #27ae60;
+  width: 100%; }
+
+/* line 34, ../../sass/styles.scss */
+#Video {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #2ecc71;
+  width: 100%; }
+
+/* line 40, ../../sass/styles.scss */
+#Contact {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #27ae60;
+  height: 300px; }
+
+/* line 47, ../../sass/styles.scss */
+h4 {
+  text-align: center;
+  color: #e1e1e1;
+  font-size: larger; }
+
+/* line 52, ../../sass/styles.scss */
+h5 {
+  color: #e1e1e1;
+  font-size: larger; }
+
+/* line 56, ../../sass/styles.scss */
+h2 {
+  font-size: x-large;
+  font-family: Anton;
+  text-align: center; }
+
+/* line 65, ../../sass/styles.scss */
+#spacing {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+/* line 69, ../../sass/styles.scss */
+#section_header {
+  color: #e1e1e1;
+  text-align: center;
+  font-size: xx-large;
+  padding-bottom: 10px;
+  font-family: Anton;
+  letter-spacing: 1px;
+  text-decoration: overline; }
+
+@media only screen and (min-width: lower-bound(40.063em, 64em)) {
+  /* line 80, ../../sass/styles.scss */
+  #section_header {
+    font-size: x-small;
+    color: #1E824C;
+    text-decoration: line-through; } }
+/* line 88, ../../sass/styles.scss */
+p {
+  text-align: center;
+  color: #e1e1e1;
+  font-family: Anton;
+  font-size: xx-large; }
+
+/* line 94, ../../sass/styles.scss */
+p.section_text {
+  text-align: center;
+  color: #e1e1e1;
+  font-family: Enriqueta;
+  font-size: large;
+  padding: 5px 5px; }
+
+/* line 101, ../../sass/styles.scss */
+img.header {
+  border-bottom: solid;
+  border-bottom-width: 10px;
+  border-bottom-color: #1E824C;
+  width: 100%; }
+
+/* line 110, ../../sass/styles.scss */
+.footer {
+  background-color: #27ae60;
+  padding: 2rem 4rem;
+  text-align: center;
+  color: #e1e1e1; }
+  /* line 115, ../../sass/styles.scss */
+  .footer i {
+    font-size: 100px; }
+
+/* line 121, ../../sass/styles.scss */
+.footer h4 {
+  color: #e1e1e1;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 10px; }
+/* line 128, ../../sass/styles.scss */
+.footer p {
+  font-weight: 300;
+  font-size: .8rem; }
+
+/* line 135, ../../sass/styles.scss */
+.full-width {
+  max-width: 1400px; }
+
+/* line 139, ../../sass/styles.scss */
+img.modalview {
+  width: 100%;
+  height: 100%;
+  align-content: center; }
+
+/* line 145, ../../sass/styles.scss */
+.your-class {
+  margin: 0px -10px; }
+
+/* line 148, ../../sass/styles.scss */
+.slick-slide {
+  text-align: center;
+  margin: 0 10px;
+  vertical-align: middle; }
+
+/* line 154, ../../sass/styles.scss */
+.slick-slide::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
+
+/* line 161, ../../sass/styles.scss */
+.slick-slide img {
+  vertical-align: middle;
+  display: inline-block; }
+
+/* line 166, ../../sass/styles.scss */
+.slick-list {
+  margin: 0 -10px;
+  background-color: transparent; }
+
+/* line 171, ../../sass/styles.scss */
+img.slider {
+  margin: 0 10px; }
+
+/* line 176, ../../sass/styles.scss */
+p.modal {
+  color: black;
+  font-style: italic;
+  font-family: Enriqueta; }
+
+/* line 182, ../../sass/styles.scss */
+a:link {
+  color: #e1e1e1; }
+
+/* visited link */
+/* line 187, ../../sass/styles.scss */
+a:visited {
+  color: #e1e1e1; }
+
+/* mouse over link */
+/* line 192, ../../sass/styles.scss */
+a:hover {
+  color: #2ecc71; }
+
+/* selected link */
+/* line 197, ../../sass/styles.scss */
+a:active {
+  color: #e1e1e1; }

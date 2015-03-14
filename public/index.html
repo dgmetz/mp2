@@ -1,36 +1,88 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>MP2 Starter</title>
-  <script src="./lib/angular/angular.min.js"></script>
-  <script src="./js/controllers.js"></script>
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./foundation/css/foundation.css">
-  
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>MP2 Starter</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./foundation/css/foundation.css">
+
+    <!--
+    <script src="./js/script.js"></script>
+    <script src="./lib/jquery-2.1.3.min/index.js"></script>
+-->
+
+
+    <script src="./lib/angular/angular.min.js"></script>
+    <script src="./js/controllers.js"></script>
+    <script src="./foundation/js/vendor/jquery.js"></script>
+    <!--<script src="./lib/jquery-2.1.3.min/index.js"></script>-->
+    <script src="./foundation/js/foundation.js"></script>
+    <script src="./foundation/js/foundation.min.js"></script>
+
+    <script src="./foundation/js/foundation/foundation.magellan.js"></script>
+
+    <script src="./foundation/js/foundation/foundation.reveal.js"></script>
+    <script src="./js/script.js"></script>
+    <!--
+    <script src="./js/script.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!--slick-->
+    <link rel="stylesheet" href="./lib/slick.js/slick/slick.css" type="text/css"/>
+    <link rel="stylesheet" href="./lib/slick.js/slick/slick-theme.css" type="text/css"/>
+    <script src="./lib/slick.js/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="http://localhost:35729/livereload.js"></script>
+
+
 </head>
 
 
 <body>
-
-	<nav class="top-bar" data-topbar role="navigation">
+<div class="fixed">
+	<nav class="top-bar custom_topbar" data-topbar role="navigation">
 	  <ul class="title-area">
 	    <li class="name">
-	      <h1><a href="#">MP2</a></h1>
+	        <h1><a href="#">D.G. Metz Portfolio</a></h1>
 	    </li>
 	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+
 	  </ul>
 
 	  <section class="top-bar-section">
 	    <!-- Left Nav Section -->
 	    <ul class="left">
-	      <li><a href="https://courses.engr.illinois.edu/cs498rk1/index.html">CS498RK</a></li>
+            <li>
+                <a href="https://courses.engr.illinois.edu/cs498rk1/index.html">Home</a>
+            </li>
+            <li>
+                <a href="https://courses.engr.illinois.edu/cs498rk1/index.html">About</a>
+            </li>
+            <li>
+                <a href="https://courses.engr.illinois.edu/cs498rk1/index.html">Comics</a>
+            </li>
+            <li>
+                <a href="https://courses.engr.illinois.edu/cs498rk1/index.html">Ceramics</a>
+            </li>
+            <li>
+                <a href="https://courses.engr.illinois.edu/cs498rk1/index.html">Video</a>
+            </li>
+            <li>
+                <a href="https://courses.engr.illinois.edu/cs498rk1/index.html">Contact</a>
+            </li>
 	    </ul>
 	  </section>
 	</nav>
+</div>
 
+    <div id="topPad">
+        <img class="header" src="./data/pencils.jpg"/>
+    </div>
+    <!--
 	<div class="row" ng-app = "demoApp">
 		<div class="panel small-centered columns small-12 medium-4">
     	<input id="nameInput" ng-model="name" placeholder="Your Name" autofocus>
@@ -39,22 +91,161 @@
 
 		</div>
 	</div>
-	<div class="row">
-		<div class="alert columns small-12 large-6">
-			<div><img src="http://lorempixel.com/400/200/cats" /></div>
+    -->
+<div id = "About">
+    <div class="row">
+        <div id="section_header">ABOUT</div>
+        <div id="section_content_light">
+            <p class="section_text">A space for collecting and displaying my personal artwork. The focus of my work is in comics and sequential stories. Other areas of interest include ceramics and printmaking.</p>
+        </div>
+    </div>
+</div>
 
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
-		</div>
-		<div class="columns small-12 large-6">
-	  	<div><img src="http://lorempixel.com/400/200/nature" />	</div>
-	  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!</div>
-	</div>
- 
+<div id = "Comics">
+    <div class="row">
+        <div id="section_header">COMICS</div>
+        <p class="section_text">A selection of comics to view</p>
+            <div class="your-class">
+                <div><img class="slider" src="./data/img3.png"/></div>
+                <div><img class="slider" src="./data/img2.png"/></div>
+                <div><img class="slider" src="./data/img1.png"/></div>
+                <div><img class="slider" src="./data/img4.png"/></div>
+                <div><img class="slider" src="./data/img5.png"/></div>
+            </div>
+    </div>
+</div>
+
+<!--
+MODALS FOR CERAMIC PICTURES DEFINITIONS
+-->
+<div id="c1Modal" class="reveal-modal" data-reveal>
+<h2>Installation Piece - 2013</h2>
+<p class="modal">Earthenware, candles and used tea leaves</p>
+<a class="close-reveal-modal">&#215;</a>
+    <img class="modalview" src="./data/ceramics1.jpg"/>
+</div>
+<div id="c2Modal" class="reveal-modal" data-reveal>
+    <h2>Bearded Man - 2013</h2>
+    <p class="modal">Earthenware</p>
+    <a class="close-reveal-modal">&#215;</a>
+    <img class="modalview" src="./data/ceramics7.jpg"/>
+</div>
+<div id="c3Modal" class="reveal-modal" data-reveal>
+    <h2>Bearded Man (Alternate Lighting) - 2013</h2>
+    <p class="modal">Earthenware</p>
+    <a class="close-reveal-modal">&#215;</a>
+    <img class="modalview" src="./data/ceramics3.jpg"/>
+</div>
+<div id="c4Modal" class="reveal-modal" data-reveal>
+    <h2>Birch Tree Serving Tray - 2012 </h2>
+    <p class="modal">Stoneware with high fire glazes</p>
+    <a class="close-reveal-modal">&#215;</a>
+    <img class="modalview" src="./data/ceramics4.jpg"/>
+</div>
+<div id="c5Modal" class="reveal-modal" data-reveal>
+    <h2>The One-Armed Man - 2013</h2>
+    <p class="modal">Earthenware and Raw Slip colored</p>
+    <a class="close-reveal-modal">&#215;</a>
+    <img class="modalview" src="./data/ceramics6.jpg"/>
+</div>
+<div id="c6Modal" class="reveal-modal" data-reveal>
+    <h2>Cypress Knees - 2012</h2>
+    <p class="modal">Porcelain Mold</p>
+    <a class="close-reveal-modal">&#215;</a>
+    <img class="modalview" src="./data/ceramics2.jpg"/>
+</div>
 
 
-  <script src="./js/script.js"></script>
-  <script src="./lib/jquery-2.1.3.min/index.js"></script>
-  <script src="./foundation/js/foundation.min.js"></script>
-  <script src="http://localhost:35729/livereload.js"></script>
+<div id = "Ceramics">
+    <div id="section_header">CERAMICS</div>
+    <p class="section_text">A gallery of work in ceramic sculpture</p>
+    <p class="section_text">Click on any thumbnail for more information</p>
+    <div id="ceramicsWrapper">
+    <div class="row full-width">
+
+
+
+        <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3">
+            <li>
+                <a class="th" href="#" data-reveal-id="c1Modal">
+                    <img src="./data/ceramics1.jpg"/>
+                </a>
+            </li>
+            <li>
+                <a class="th" href="#" data-reveal-id="c2Modal">
+                    <img src="./data/ceramics7.jpg"/>
+                </a>
+            </li>
+            <li>
+                <a class="th" href="#" data-reveal-id="c3Modal">
+                    <img src="./data/ceramics3.jpg"/>
+                </a>
+            </li>
+            <li>
+                <a class="th" href="#" data-reveal-id="c4Modal">
+                    <img src="./data/ceramics4.jpg"/>
+                </a>
+            </li>
+            <li>
+                    <a class="th" href="#" data-reveal-id="c5Modal">
+                    <img src="./data/ceramics6.jpg"/>
+                </a>
+            </li>
+            <li>
+                <a class="th" href="#" data-reveal-id="c6Modal">
+                    <img src="./data/ceramics2.jpg"/>
+                </a>
+            </li>
+        </ul>
+
+        </div>
+    </div>
+</div>
+<div id = "Video">
+    <div class="row">
+        <div id="section_header">VIDEO</div>
+        <p class="section_text">Inspiring Music</p>
+        <div class="flex-video widescreen vimeo">
+            <iframe src="http://player.vimeo.com/video/36549462" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="row full-width">
+        <div class="small-12 medium-4 large-4 columns">
+            <i class="fi-mail"></i>
+            <p>Email</p>
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+            <i class="fi-address-book"></i>
+            <p>Phone</p>
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+            <i class="fi-folder"></i>
+            <p>Address</p>
+        </div>
+     </div>
+
+    <div class="row full-width">
+        <div class="small-12 medium-4 large-4 columns">
+            <a href="http://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            <p>Facebook</p>
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+            <a href="http://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+            <p>Twitter</p>
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+            <a href="http://www.tumblr.com"><i class="fa fa-tumblr"></i></a>
+            <p>Tumblr</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    $(document).foundation();
+</script>
+
+
 </body>
 </html>

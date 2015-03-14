@@ -1,0 +1,63 @@
+<style>
+    p{
+        text-align: center;
+        font-size: x-large;
+        color: #e1e1e1;
+    }
+    a.radius{
+        background-color: #1E824C;
+        color: #e1e1e1;
+    }
+    h5{
+        color: #e1e1e1;
+    }
+    img{
+        height: 50%;
+        width: 50%;
+        border: 1px;
+        border-color: #e1e1e1;
+    }
+    a.rank{
+        color: #e1e1e1;
+    }
+
+</style>
+
+<div class="container">
+
+    <div class="nav-options">
+        <h1> Internet Movie Database Directory</h1>
+        <a href="imdb250.html#/gallery">Gallery</a>
+    </div>
+
+    <div class="movie-search">
+        <div class="search-options">
+            <input class="search-bar" type="text" ng-model="search" placeholder="Search by title or rank..." />
+            <p>Sort by...</p>
+            <a ng-click="sort='title'"class="radius button">Title (Ascending)</a>
+            <a ng-click="sort='-title'"class="radius button">Title (Descending)</a>
+
+            <a ng-click="sort='rank'"class="radius button">Rank (Ascending)</a>
+            <a ng-click="sort='-rank'"class="radius button">Rank (Descending)</a>
+        </div>
+    </div>
+
+    <div class="results" ng-hide="!search">
+        <ul>
+            <li ng-repeat="movie in movies | filter:search | orderBy:sort">
+                <a class="rank" href="imdb250.html#/details/{{movie.rank}}">
+                    <div class="result">
+                        <div>
+                            <h5>{{movie.title}}</h5>
+                            <span>Rank: {{movie.rank}}</span>
+                        </div>
+                        <br>
+                        <div style="width:180px;"><img src="data/images/{{movie.id}}.jpg"></div>
+                    </div>
+                </a>
+                <hr>
+            </li>
+        </ul>
+    </div>
+
+</div>

@@ -13,7 +13,7 @@
 $include-html-top-bar-classes: $include-html-classes !default;
 
 // Background color for the top bar
-$topbar-bg-color: $oil !default;
+$topbar-bg-color: #1E824C;//$oil !default;
 $topbar-bg: $topbar-bg-color !default;
 
 // Height and margin
@@ -46,7 +46,7 @@ $topbar-button-font-size: 0.75rem !default;
 $topbar-button-top: 7px !default;
 
 // Style the top bar dropdown elements
-$topbar-dropdown-bg: $oil !default;
+$topbar-dropdown-bg: #1E824C;//$oil !default;
 $topbar-dropdown-link-color: $white !default;
 $topbar-dropdown-link-color-hover: $topbar-link-color-hover !default;
 $topbar-dropdown-link-bg: $oil !default;
@@ -294,6 +294,7 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
       #{$default-float}: 0;
       position: relative;
       width: auto;
+
       @include single-transition($default-float, $topbar-transition-speed);
 
       ul {

@@ -1,0 +1,53 @@
+<style>
+    .movie-details{
+        display: table; margin-top: 5px;
+    }
+    .im, .detail{
+        display: table-cell;
+    }
+    .im{
+        float: left;
+        width: 500px;
+    }
+    a.radius{
+        color: #e1e1e1;
+        background-color: #1E824C;
+    }
+    img{
+        height: 75%;
+        width: 75%;
+    }
+</style>
+
+<div class="details">
+
+    <div class="nav-options">
+        <h1> Internet Movie Database Directory</h1>
+        <a href="imdb250.html#/list">Search</a>
+        <a href="imdb250.html#/gallery">Gallery</a>
+    </div>
+
+    <div class="movie-details">
+
+        <span class="title">{{movie.title}}</span><br>
+        <span class="rank">Rank: {{movie.rank}}</span><br>
+
+        <div class="movie">
+            <div class="im"><img src="data/images/{{movie.imdbID}}.jpg"></div>
+            <div class="detail">
+                <span>{{movie.plot}}</span><br><br>
+                <span><strong>Director :</strong> {{movie.director[0]}}</span><br>
+                <span><strong>Awards :</strong> {{movie.awards}}</span><br>
+                <span><strong>Released :</strong> {{movie.released}}</span><br>
+                <span><strong>Runtime :</strong> {{movie.runtime}}</span><br>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="prev-next">
+        <a href="imdb250.html#/details/{{movie.rank - 1}}" class="radius button">Prev</a>
+        <a href="imdb250.html#/details/{{movie.rank + 1}}" class="radius button">Next</a>
+    </div>
+
+</div>

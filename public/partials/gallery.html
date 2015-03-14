@@ -1,0 +1,45 @@
+<style>
+    p{
+        text-align: center;
+        font-size: x-large;
+        color: #e1e1e1;
+    }
+    .genres{
+        text-align: center;
+        margin-top: 10px;
+    }
+    a.button{
+        background-color: #1E824C;
+        color: #e1e1e1;
+    }
+</style>
+
+<div class="gallery">
+    <div class="nav-options">
+        <h1> Internet Movie Database Directory</h1>
+        <a href="imdb250.html#/list">Search</a>
+    </div>
+    <p>Filter by Genre</p>
+    <div class="genres">
+        <a class="button" ng-click="genreFilter=''">All</a>
+        <a class="button" ng-click="genreFilter='action'">Action</a>
+        <a class="button" ng-click="genreFilter='adventure'">Adventure</a>
+        <a class="button" ng-click="genreFilter='comedy'">Comedy</a>
+        <a class="button" ng-click="genreFilter='crime'">Crime</a>
+        <a class="button" ng-click="genreFilter='drama'">Drama</a>
+        <a class="button" ng-click="genreFilter='musical'">Musical</a>
+        <a class="button" ng-click="genreFilter='mystery'">Mystery</a>
+        <a class="button" ng-click="genreFilter='romance'">Romance</a>
+        <a class="button" ng-click="genreFilter='sci-fi'">Sci-Fi</a>
+        <a class="button" ng-click="genreFilter='thriller'">Thriller</a>
+        <a class="button" ng-click="genreFilter='western'">Western</a>
+    </div>
+
+    <div class="row">
+        <ul class="small-block-grid-8">
+            <li ng-repeat="movie in movies | filter: genreFilter">
+                <div class="pos"><a href="imdb250.html#/details/{{movie.rank}}"><img src="data/images/{{movie.id}}.jpg"></a></div>
+            </li>
+        </ul>
+    </div>
+</div>
