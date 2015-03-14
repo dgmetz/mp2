@@ -137,20 +137,14 @@ h2 {
   letter-spacing: 1px;
   text-decoration: overline; }
 
-@media only screen and (min-width: lower-bound(40.063em, 64em)) {
-  /* line 80, ../../sass/styles.scss */
-  #section_header {
-    font-size: x-small;
-    color: #1E824C;
-    text-decoration: line-through; } }
-/* line 88, ../../sass/styles.scss */
+/* line 81, ../../sass/styles.scss */
 p {
   text-align: center;
   color: #e1e1e1;
   font-family: Anton;
   font-size: xx-large; }
 
-/* line 94, ../../sass/styles.scss */
+/* line 87, ../../sass/styles.scss */
 p.section_text {
   text-align: center;
   color: #e1e1e1;
@@ -158,97 +152,128 @@ p.section_text {
   font-size: large;
   padding: 5px 5px; }
 
-/* line 101, ../../sass/styles.scss */
+/* line 94, ../../sass/styles.scss */
 img.header {
   border-bottom: solid;
   border-bottom-width: 10px;
   border-bottom-color: #1E824C;
   width: 100%; }
 
-/* line 110, ../../sass/styles.scss */
+/* line 103, ../../sass/styles.scss */
 .footer {
   background-color: #27ae60;
   padding: 2rem 4rem;
   text-align: center;
   color: #e1e1e1; }
-  /* line 115, ../../sass/styles.scss */
+  /* line 108, ../../sass/styles.scss */
   .footer i {
     font-size: 100px; }
 
-/* line 121, ../../sass/styles.scss */
+/* line 114, ../../sass/styles.scss */
 .footer h4 {
   color: #e1e1e1;
   font-size: 2rem;
   font-weight: 400;
   margin-top: 1rem;
   margin-bottom: 10px; }
-/* line 128, ../../sass/styles.scss */
+/* line 121, ../../sass/styles.scss */
 .footer p {
   font-weight: 300;
   font-size: .8rem; }
 
-/* line 135, ../../sass/styles.scss */
+/* line 128, ../../sass/styles.scss */
 .full-width {
   max-width: 1400px; }
 
-/* line 139, ../../sass/styles.scss */
+/* line 132, ../../sass/styles.scss */
 img.modalview {
   width: 100%;
   height: 100%;
   align-content: center; }
 
-/* line 145, ../../sass/styles.scss */
+/* line 138, ../../sass/styles.scss */
 .your-class {
   margin: 0px -10px; }
 
-/* line 148, ../../sass/styles.scss */
+/* line 141, ../../sass/styles.scss */
 .slick-slide {
   text-align: center;
   margin: 0 10px;
   vertical-align: middle; }
 
-/* line 154, ../../sass/styles.scss */
+/* line 147, ../../sass/styles.scss */
 .slick-slide::before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle; }
 
-/* line 161, ../../sass/styles.scss */
+/* line 154, ../../sass/styles.scss */
 .slick-slide img {
   vertical-align: middle;
   display: inline-block; }
 
-/* line 166, ../../sass/styles.scss */
+/* line 159, ../../sass/styles.scss */
 .slick-list {
   margin: 0 -10px;
   background-color: transparent; }
 
-/* line 171, ../../sass/styles.scss */
+/* line 164, ../../sass/styles.scss */
 img.slider {
   margin: 0 10px; }
 
-/* line 176, ../../sass/styles.scss */
+/* line 169, ../../sass/styles.scss */
 p.modal {
   color: black;
   font-style: italic;
   font-family: Enriqueta; }
 
-/* line 182, ../../sass/styles.scss */
+/* line 175, ../../sass/styles.scss */
 a:link {
   color: #e1e1e1; }
 
 /* visited link */
-/* line 187, ../../sass/styles.scss */
+/* line 180, ../../sass/styles.scss */
 a:visited {
   color: #e1e1e1; }
 
 /* mouse over link */
-/* line 192, ../../sass/styles.scss */
+/* line 185, ../../sass/styles.scss */
 a:hover {
   color: #2ecc71; }
 
 /* selected link */
-/* line 197, ../../sass/styles.scss */
+/* line 190, ../../sass/styles.scss */
 a:active {
   color: #e1e1e1; }
+
+/*Resizing via media queries for phone size */
+@media screen and (max-width: 40em) {
+  /* line 196, ../../sass/styles.scss */
+  #section_header {
+    font-size: x-large; }
+
+  /* line 199, ../../sass/styles.scss */
+  p.section_text {
+    font-size: medium; }
+
+  /* line 202, ../../sass/styles.scss */
+  #ceramicsWrapper {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  /* line 206, ../../sass/styles.scss */
+  .your-class {
+    margin: 35px 35px; }
+
+  /* line 209, ../../sass/styles.scss */
+  img.slider {
+    margin: 0px 0px; }
+
+  /* line 212, ../../sass/styles.scss */
+  .slick-list {
+    margin: 0px 0px; }
+
+  /* line 215, ../../sass/styles.scss */
+  .slick-slide {
+    margin: 0px 0px; } }

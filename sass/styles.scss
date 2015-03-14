@@ -76,15 +76,8 @@ h2{
   letter-spacing: 1px;
   text-decoration: overline;
 }
-@media #{$medium-up}{
-  #section_header{
 
-    font-size: x-small;
-    color: $clover-dark;
-    text-decoration: line-through;
-  }
 
-}
 p{
   text-align: center;
   color: $off-white;
@@ -196,5 +189,31 @@ a:hover {
 /* selected link */
 a:active {
   color: $off-white;
+}
+
+/*Resizing via media queries for phone size */
+@media screen and (max-width: 40em){
+  #section_header{
+    font-size: x-large;
+  }
+  p.section_text{
+    font-size: medium;
+  }
+  #ceramicsWrapper{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .your-class{
+    margin: 35px 35px;
+  }
+  img.slider{
+    margin: 0px 0px;
+  }
+  .slick-list{
+    margin: 0px 0px;
+  }
+  .slick-slide{
+    margin: 0px 0px;
+  }
 }
 

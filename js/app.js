@@ -6,6 +6,7 @@ var demoApp = angular.module('demoApp', [
 
 demoApp.service('dataService', function($http) {
 
+    //Read json data into allMovieData from data/imdb250.json
     var allMovieData = null;
     var listData = function(callback) {
         $http.get('data/imdb250.json').success(function(data) {
@@ -19,10 +20,11 @@ demoApp.service('dataService', function($http) {
         });
 
     };
+
     var detailData = function(movieId, callback){
         callback(allMovieData[movieID.rank-1]);
     }
-
+    //index through movieData and push each movie, id, rank and genre to gallery dataset
     var galleryData = function(callback){
         $http.get('data/imdb250.json').success(function(data) {
             var gallery_dataset = [];
@@ -39,7 +41,7 @@ demoApp.service('dataService', function($http) {
         galleryData: galleryData
     };
 });
-
+//config demoApp to direct to /gallery on default, with partials
 demoApp.config(['$routeProvider', function($routeProvider){
     $routeProvider.when('/list',{
             templateUrl:'partials/list.html',
